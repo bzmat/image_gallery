@@ -28,3 +28,8 @@ img{
 img.min:hover{
 	transform: scale(1.3);
 }
+
+form{
+
+	margin-top: 20px;
+}

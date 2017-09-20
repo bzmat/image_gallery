@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+session_start();
+
 $pageTitle = "Immage Gallery Register";
 
 include('views/header.php');
@@ -29,7 +32,7 @@ include('views/menu.php');
 
 			  <div class="checkbox">
 			    <label>
-			      <input type="checkbox" name="regulations"><a href="#">Akceptuję regulamin</a> 
+			      <input type="checkbox" name="regulations" value="regulations"><a href="#">Akceptuję regulamin</a> 
 			    </label>
 			  </div>
 
@@ -37,7 +40,11 @@ include('views/menu.php');
 
 				<?php 
 
-					echo '<div class="alert alert-danger">'.$error_field.'</div>';
+				if (isset($_SESSION["error_field"])) {
+					
+				}
+
+					echo '<div class="alert alert-danger">'.$_SESSION["error_field"].'</div>';
 
 				 ?>
 

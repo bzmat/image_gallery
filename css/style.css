@@ -1,11 +1,13 @@
 html{
-	height: 100%;
+
+	min-height: 100%;
 }
 
 body {
   padding-top: 50px;
-  background: linear-gradient(white, grey) no-repeat;
+  background: linear-gradient(white , grey) no-repeat;
   min-height: 100%;
+  
 }
 .starter-template {
   padding: 40px 15px;
@@ -33,3 +35,10 @@ form{
 
 	margin-top: 20px;
 }
+
+.edit{
+
+	padding-top: 50%;
+	padding-bottom: 50%;
+}
+
